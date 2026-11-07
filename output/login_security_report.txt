@@ -1,0 +1,44 @@
+LINUX LOGIN SECURITY REPORT
+===========================
+
+FAILED LOGIN ATTEMPTS
+
+IP Address: 192.168.1.20
+Failed attempts: 4
+Successful attempts: 0
+Classification: SUSPICIOUS ACTIVITY
+
+Timestamp: 2026-11-07T10:01:15
+Server: server01
+Username: admin
+IP Address: 192.168.1.20
+
+Timestamp: 2026-11-07T10:02:10
+Server: server01
+Username: admin
+IP Address: 192.168.1.20
+
+Timestamp: 2026-11-07T10:03:05
+Server: server01
+Username: admin
+IP Address: 192.168.1.20
+
+Timestamp: 2026-11-07T10:04:20
+Server: server01
+Username: root
+IP Address: 192.168.1.20
+
+---------------------------
+
+IP Address: 192.168.1.40
+Failed attempts: 1
+Successful attempts: 1
+Classification: POTENTIALLY GENUINE - REVIEW REQUIRED
+
+Timestamp: 2026-11-07T10:06:15
+Server: server02
+Username: mary
+IP Address: 192.168.1.40
+
+---------------------------
+
