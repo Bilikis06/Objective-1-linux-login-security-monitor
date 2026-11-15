@@ -1,0 +1,13 @@
+
+{
+    "server01": {
+        "asset_id": "AST001",
+        "asset_type": "Application Server",
+        "criticality": "High"
+    },
+    "server02": {
+        "asset_id": "AST002",
+        "asset_type": "Database Server",
+        "criticality": "High"
+    }
+}

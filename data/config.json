@@ -1,4 +1,5 @@
 {
-    "window_minutes": 5
+    "window_minutes": 5,
+    "threshold": 3,
+    "log_year": 2026
 }
-
