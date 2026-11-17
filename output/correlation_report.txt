@@ -1,0 +1,9 @@
+OBJECTIVE 2: EVENT CORRELATION REPORT
+-------------------------------------
+Total valid input records: 2
+Invalid records skipped: 0
+Non-alert records filtered: 1
+Alert records correlated: 1
+Incidents produced: 1
+Alert record reduction: 0.00%
+Processing time: 0.001426 seconds
