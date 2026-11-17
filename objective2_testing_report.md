@@ -125,3 +125,12 @@ The functional, error-handling and performance tests demonstrate that the event 
 In the performance test, 1,000 alert records were consolidated into 20 incidents, representing a 98% reduction, with a measured processing time of 0.033133 seconds.
 
 Final integration testing using Objective 1's production output confirmed that both objectives operate together as an integrated workflow. The results provide evidence that the application has achieved the intended pre-correlation functionality within the scope of the project.
+Mock SIEM Webhook Integration Test
+
+A mock SIEM webhook was implemented to evaluate whether the event correlator's JSONL output could be transferred to and accepted by an external SIEM-style endpoint. The test used a temporary local HTTP server to simulate the receiving application without requiring a live SIEM deployment.
+
+The test loaded the generated SIEM-ready incident records, converted them into a JSON payload and submitted them to the mock webhook using an HTTP POST request. The receiving endpoint validated the JSON payload and returned an HTTP 200 response with an acceptance status and the number of records received.
+
+The test passed when the receiving endpoint accepted the payload and the number of records received matched the number submitted. This demonstrated successful transfer and acceptance of the generated incident data within the controlled test environment.
+
+The test was limited to a local mock endpoint. It did not establish a production connection to a SIEM platform or demonstrate encrypted transmission. A production implementation would require HTTPS, appropriate authentication and secure handling of endpoint configuration.
